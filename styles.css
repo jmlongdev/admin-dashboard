@@ -9,7 +9,7 @@
 
 .container {
   font-size: 28px;
-  font-family: Helvetica;
+  font-family: "Roboto";
   /* font-weight: bold; */
 }
 
@@ -215,9 +215,30 @@ a {
   border-radius: 10px;
   box-shadow: 3px 2px 3px rgb(153, 152, 152);
   border-left: 9px solid #d19410;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
 }
+
+.card-list {
+  display: grid;
+  grid-row: 2/3;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+.card-info {
+  grid-row: 1/2;
+  align-self: center;
+  padding-left: 20px;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.card-summary {
+  font-size: 14px;
+  color: rgb(107, 114, 114);
+}
+
 .social {
-  /* grid-column: ; */
   grid-row: 2/3;
   background-color: #e2e8f0;
   display: grid;
